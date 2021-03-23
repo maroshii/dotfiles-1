@@ -97,5 +97,15 @@ brew install tree
 brew install vbindiff
 brew install zopfli
 
+# maroshii
+brew install the_silver_searcher
+brew tap aykamko/tag-ag
+brew install tag-ag
+brew install z
+brew install node
+brew install npm
+brew install yarn
+brew install spotify
+
 # Remove outdated versions from the cellar.
 brew cleanup

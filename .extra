@@ -1,3 +1,5 @@
+export EDITOR='code --wait'
+
 # Git credentials
 # Not in the repository, to prevent people from accidentally committing under my name
 GIT_AUTHOR_NAME="Francisco Miranda"
@@ -6,3 +8,13 @@ git config --global user.name "$GIT_AUTHOR_NAME"
 GIT_AUTHOR_EMAIL="franciscomirandaa@gmail.com"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
+
+
+if hash ag 2>/dev/null; then
+  export TAG_SEARCH_PROG=ag  # replace with rg for ripgrep
+  export TAG_CMD_FMT_STRING="code --goto {{.Filename}}:{{.LineNumber}}:{{.ColumnNumber}}"
+  tag() { command tag "$@"; source ${TAG_ALIAS_FILE:-/tmp/tag_aliases} 2>/dev/null; }
+  alias ag=tag  # replace with rg for ripgrep
+fi
+
+. /usr/local/etc/profile.d/z.sh
