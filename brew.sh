@@ -107,5 +107,8 @@ brew install npm
 brew install yarn
 brew install spotify
 
+# https://github.com/bcicen/ctop
+brew install ctop
+
 # Remove outdated versions from the cellar.
 brew cleanup
