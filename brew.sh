@@ -98,6 +98,7 @@ brew install vbindiff
 brew install zopfli
 
 # maroshii
+brew install jq
 brew install the_silver_searcher
 brew tap aykamko/tag-ag
 brew install tag-ag
