@@ -146,3 +146,10 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+################################################################################
+# Maroshii
+################################################################################
+alias k="kubectl"
+# extend alias to autocomplete
+complete -F __start_kubectl k
