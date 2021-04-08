@@ -106,6 +106,8 @@ brew install z
 brew install node
 brew install npm
 brew install yarn
+brew install watch
+# Apps
 brew install spotify
 
 # https://github.com/bcicen/ctop
