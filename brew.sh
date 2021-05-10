@@ -110,6 +110,8 @@ brew install watch
 # Apps
 brew install spotify
 
+brew install --cask google-cloud-sdk
+
 # https://github.com/bcicen/ctop
 brew install ctop
 

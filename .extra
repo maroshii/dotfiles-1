@@ -21,3 +21,17 @@ fi
 
 
 source <(kubectl completion bash)
+
+# enable gcloud (google cloud sdk) command if it has been installed
+gcp_file1="$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc"
+gcp_file2="$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc"
+test -f "$gcp_file1" && source $gcp_file1
+test -f "$gcp_file2" && source $gcp_file2
+
+# Okteto development config
+export OKTETO_RELEASE_NAME=fran
+export OKTETO_SUBDOMAIN=fran.dev.okteto.net
+export OKTETO_EMAIL=fran@okteto.com
+export OKTETO_GOOGLE_CLIENT_ID=159033096402-n1tnsf3qreie5qhre0gtnhsdbt6prssk.apps.googleusercontent.com
+export OKTETO_GOOGLE_CLIENT_SECRET=shlnSb1rOFzizrOc6hd0ujME
+export OKTETO_DEV_CLUSTER=gke_development-300207_us-central1-c_fran
