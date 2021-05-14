@@ -151,8 +151,12 @@ alias path='echo -e ${PATH//:/\\n}'
 # Maroshii
 ################################################################################
 alias k="kubectl"
+
 # extend alias to autocomplete
 complete -F __start_kubectl k
 
 # alias watch to make it work with aliases
 alias watch='watch '
+
+alias gconf="code $HOME/.gitconfig"
+alias extra_local="code $HOME/.extra_local"
