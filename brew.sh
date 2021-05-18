@@ -108,6 +108,8 @@ brew install npm
 brew install yarn
 brew install watch
 brew install yq
+brew install diff-so-fancy
+
 # Apps
 brew install spotify
 
