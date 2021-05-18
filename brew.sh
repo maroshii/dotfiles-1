@@ -107,6 +107,7 @@ brew install node
 brew install npm
 brew install yarn
 brew install watch
+brew install yq
 # Apps
 brew install spotify
 
