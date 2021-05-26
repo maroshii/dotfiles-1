@@ -109,6 +109,9 @@ brew install yarn
 brew install watch
 brew install yq
 brew install diff-so-fancy
+brew install mkcert; brew install nss
+
+
 
 # Apps
 brew install spotify
